@@ -11,8 +11,24 @@
     <i class="icon ion-location"></i>
     Seleccionar Destino
   </a>
-
 </div>
+<ul class="list">
+
+  <li class="item item-toggle">
+     Notificaciones
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+<ion-item>
+  <ion-label>Date</ion-label>
+  <input type="time" ng-model="myDate">
+</ion-item>
+
+</ul>
       <div id="map" data-tap-disabled="true"></div>
    </ion-content>
    <div class="bar bar-footer bar-balanced" ng-show="seleccionarPunto.length != 0">

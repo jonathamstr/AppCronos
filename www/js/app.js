@@ -60,7 +60,10 @@ angular.module('starter', ['ionic','login.controllers','app.controllers','RutasI
             templateUrl:"templates/configRuta.html",
             controller: 'ConfigCtrl'
           }
-      }
+      },
+      params: {
+    ruta: null
+  }
     })
     .state('app.tomarCamion', {
         url:"/tomarCamion",
