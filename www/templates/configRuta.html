@@ -1,0 +1,21 @@
+ <ion-view view-title="{{myTitle}}">
+   <ion-content class="padding">
+     <div class="list card">
+
+  <a class="item item-icon-left" ng-click="seleccionar('Origen')">
+    <i class="icon ion-map"></i>
+    Seleccionar Origen
+  </a>
+
+  <a class="item item-icon-left" ng-click="seleccionar('Destino')">
+    <i class="icon ion-location"></i>
+    Seleccionar Destino
+  </a>
+
+</div>
+      <div id="map" data-tap-disabled="true"></div>
+   </ion-content>
+   <div class="bar bar-footer bar-balanced" ng-show="seleccionarPunto.length != 0">
+  <div class="title"> Estás seleccionando:{{seleccionarPunto}}</div>
+</div>
+ </ion-view>
