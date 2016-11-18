@@ -1,16 +1,17 @@
- <ion-view view-title="{{myTitle}}">
-   <ion-content class="padding">
-       <div class="list list-inset">
-  <label class="item item-input">
+<ion-view view-title="{{myTitle}}">
+  <ion-content class="padding">
+    <div class="list list-inset">
+      <label class="item item-input">
     <i class="icon ion-search placeholder-icon"></i>
     <input type="text" placeholder="Buscar" ng-model="buscar">
   </label>
-</div>
-      <ion-list>
-    <ion-item collection-repeat="ruta in rutas | filter:buscar" class="item item-button-right">
-        {{ruta.title}} 
-      <button class="button button-balanced ion-plus-round" ui-sref="app.configuration({ruta:ruta.id})"></button>
-    </ion-item>
-  </ion-list>
-   </ion-content>
- </ion-view>
+  
+    </div>
+    <ion-list>
+      <ion-item collection-repeat="ruta in rutas | filter:buscar" class="item item-button-right">
+        {{ruta.title}}
+        <button class="button button-balanced ion-plus-round" ui-sref="app.configuration({ruta:ruta.id})"></button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

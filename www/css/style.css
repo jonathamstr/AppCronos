@@ -5,5 +5,13 @@
  
 #map {
     width: 100%;
-    height: 500px;
+    height: 350px;
+}
+
+#login {
+    padding-top: 50px;
+}
+ion-checkbox{
+    white-space: nowrap;
+    overflow: visible;
 }

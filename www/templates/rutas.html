@@ -1,6 +1,14 @@
  <ion-view view-title="{{myTitle}}">
    <ion-content class="padding">
-      <button class="button button-block button-assertive" ui-sref="app.tomarCamion" >Tomar Camión</button>
+     <ion-list >
+      <ion-item ng-repeat="ruta in rutasConfigs | filter:buscar" class="item item-button-right">
+        {{ruta.ruta.etiqueta}}
+        <button class="button button-balanced ion-ios-alarm" ui-sref="app.configuration({ruta:ruta.id})"></button>
+      </ion-item>
+    </ion-list>
+      <!--<button class="button button-block button-assertive" ui-sref="app.tomarCamion" >Tomar Camión</button>-->
   <button class="button button-block button-balanced" ui-sref="app.configRuta">Configurar Camión</button>
    </ion-content>
  </ion-view>
+
+ 
