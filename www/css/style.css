@@ -15,3 +15,7 @@ ion-checkbox{
     white-space: nowrap;
     overflow: visible;
 }
+
+.button{
+background-color: #ff9e00; 
+}

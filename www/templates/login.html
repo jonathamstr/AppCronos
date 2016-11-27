@@ -1,29 +1,45 @@
+<html>
+<head>
 
-<ion-header-bar class="bar-positive">
-        <h1 class="title">Entrar a Cronos</h1>
+<ion-header-bar class="bar-positive" style="background-color: #ba000a;border-color: #ba000a;height: 6em;padding: 0;">   
+        <img src="http://i1096.photobucket.com/albums/g325/eriml94/Logo_zpscloiyzim.png" style="margin: auto;" alt=" photo Logo_zpscloiyzim.png"/>
+
 </ion-header-bar>
+
+</head>
+
+<body>
+
 <ion-view>
-<ion-pane class="padding" id="login">
-    <div class="list">
-        <label class="item item-input item-floating-label">
-            <span class="input-label" >Nombre</span>
-            <input type="text" placeholder="Nombre" ng-model="user.nombre">
-        </label>
-        <label class="item item-input item-floating-label">
-            <span class="input-label">Usuario</span>
+
+
+<ion-pane class="padding" id="login" style="padding-top: 6em;">
+    <div class="list" style="margin: auto;max-width: 400px;">
+    	<div style="text-align: center;">
+    	<div style="padding-top: 0.5em;font-size: 1.5em;"><b><br>CRONOS</b><br>
+    	</div>
+    	<br>
+        </div>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Usuario o Correo</span>
             <input type="text" placeholder="Usuario" ng-model="user.usuario">
         </label>
-        <label class="item item-input item-floating-label">
-            <span class="input-label">Email</span>
-            <input type="email" placeholder="Email" ng-model="user.email">
-        </label>
-        <label class="item item-input item-floating-label">
+        <label class="item item-input item-stacked-label">
             <span class="input-label">Contraseña</span>
             <input type="password" placeholder="Contraseña" ng-model="user.password">
         </label>
-        <button class="button button-block button-positive" ng-click="doLogin(user)">
+        <button class="button button-block button-positive" ng-click="doLogin(user) " style="max-width: 400px;margin: auto;border-color: #ff9e00;background-color: #ff9e00;">
             Entrar
         </button>
+        <div align="middle">Ingresa con:</div>
+        <img src="http://i835.photobucket.com/albums/zz279/dragonflush/facebook_32.png" style="margin: auto;" alt="facebook photo: facebook facebook_32.png"/>
+
+
     </div>
 </ion-pane>
 </ion-view>
+
+</body>
+
+
+</html>
